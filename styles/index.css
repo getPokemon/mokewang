@@ -1,0 +1,146 @@
+/*头部区域*/
+header {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #3333;
+}
+/*css效果*/
+.bannerback {
+	background-image: url(../images/back2.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 120vh;
+	font: 800 31rem '';
+	-webkit-background-clip: text;
+	/*将背景以文字切割*/
+	-webkit-text-fill-color: transparent;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.bannerback span {
+	display: block;
+	margin-top: 120px;
+}
+
+.bannerback::before {
+	content: '';
+	background-size: cover;
+	background-image: inherit;
+	/*继承*/
+	background-position: 50% 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -99;
+}
+
+/*banner列表*/
+.banner_left ul li {
+    margin: 10px 0 10px 0;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 2px;
+    cursor: pointer;
+}
+.banner_left ul li:hover {
+    color: greenyellow;
+}
+.banner_left ul {
+    background-color: #343A40;
+    padding: 30px;
+    border-radius: 20px 0 0 20px;
+}
+
+/*轮播图片*/
+.img-fluid {
+	width: 2000px;
+	height: 340px;
+}
+
+.car {
+	border-radius: 0 20px 20px 0;
+	overflow: hidden;
+}
+
+/*响应式*/
+@media screen and (max-width: 991px) {
+	.car {
+		border-radius: 20px 20px 20px 20px;
+		overflow: hidden;
+	}
+
+}
+
+@media screen and (max-width: 1199px) {
+	.img-fluid {
+		width: 2000px;
+		height: 360px;
+	}
+}
+
+.container img {
+	width: 100%;
+}
+
+.container .justify-content-between>dl {
+	border: 1px solid #3333;
+	padding: 20px;
+}
+
+/*阴影效果*/
+.act {
+	transition: box-shadow 500ms;
+}
+
+.act:hover {
+	box-sizing: border-box;
+	/* border: 1px solid #999999; */
+	cursor: pointer;
+	box-shadow: 2px 2px 9px #999999;
+}
+
+.tx {
+	width: 57px;
+	height: 57px;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+}
+
+.p {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.com>ul {
+	border: 2px solid #343A40;
+	cursor: pointer;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.com .bt {
+	color: green;
+	font-size: 12px;
+}
+
+footer {
+	background-color: #272727;
+}
+
+.flog {
+
+	width: 96px;
+	height: 50px;
+	align-self: center;
+
+}
+
+.color {
+	color: #999795;
+}

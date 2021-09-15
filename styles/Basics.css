@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    -webkit-user-drag: none;
+}
+.clear{
+clear: both;
+text-indent: 2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+    
+}
+footer {
+	background-color: #272727;
+}
+.flog {
+	width: 96px;
+	height: 50px;
+	align-self: center;
+
+}
+.color {
+	color: #999795;
+}
+.font{
+	text-indent: 2em;
+}
+.heigth{
+	height: 700px;
+}
